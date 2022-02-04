@@ -1,0 +1,10 @@
+.hero {
+  background: linear-gradient(270deg,#05f0ff 30%,#963cff) #963cff;
+  
+  & > div {
+    @apply
+      max-w-screen-xl mx-auto
+      flex items-center;
+    height: 400px;
+  }
+}
