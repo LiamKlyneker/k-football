@@ -5,7 +5,7 @@ export default function FilterSection() {
   return (
     <section className={s.filterSectionWrapper}>
       <div>
-        <SearchInput name="search-teams" placeholder="Search..." />
+        <SearchInput name="search-teams" placeholder="Search" />
 
         <div>
           <Select placeholder="City" />

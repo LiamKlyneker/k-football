@@ -22,6 +22,20 @@
   }
 }
 
+.h4 {
+  @apply font-bold text-3xl mb-2;
+}
+
+.subtitle {
+  @apply font-semibold text-sm text-gray-400;
+}
+
+.tag {
+  @apply
+    bg-gray-800 text-white text-xs font-semibold tracking-widest
+    px-2 py-1 w-min;
+}
+
 /* COLORS */
 .white {
   @apply text-white;

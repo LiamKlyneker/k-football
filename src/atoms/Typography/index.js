@@ -1,4 +1,3 @@
-import { forwardRef } from 'react';
 import { node, oneOf } from 'prop-types';
 import cx from 'classnames';
 import styles from './styles.module.css';
@@ -6,11 +5,13 @@ import styles from './styles.module.css';
 export default function Typography({ variant = 'p', color, children }) {
   const classNames = cx(styles[variant], styles[color]);
   if (variant === 'h1') {
-    return (
-      <h1 className={classNames} ref={forwardRef}>
-        {children}
-      </h1>
-    );
+    return <h1 className={classNames}>{children}</h1>;
+  } else if (variant === 'h4') {
+    return <h4 className={classNames}>{children}</h4>;
+  } else if (variant === 'subtitle') {
+    return <p className={classNames}>{children}</p>;
+  } else if (variant === 'tag') {
+    return <span className={classNames}>{children}</span>;
   } else {
     return <p className={classNames}>{children}</p>;
   }
