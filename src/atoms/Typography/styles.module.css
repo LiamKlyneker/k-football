@@ -11,10 +11,10 @@
 }
 
 .h1 {
-  @apply font-bold text-2xl;
+  @apply font-bold text-4xl;
 
   @screen md {
-    @apply text-3xl;
+    @apply text-5xl;
   }
 
   @screen xl {

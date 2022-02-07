@@ -4,10 +4,22 @@
   
   & > div {
     @apply
-      max-w-screen-xl mx-auto
+      max-w-screen-xl mx-auto px-6
       flex items-center;
-    height: 480px;
+    height: 280px;
     padding-top: 80px;
+  }
+
+  @screen md {
+    & > div {
+      height: 380px;
+    }
+  }
+
+  @screen lg {
+    & > div {
+      height: 480px;
+    }
   }
 }
 

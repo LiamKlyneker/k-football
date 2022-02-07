@@ -1,5 +1,13 @@
 .itemsListWrapper > div {
   @apply
-    max-w-screen-xl mx-auto py-8
-    grid grid-cols-3 gap-4 gap-y-6;
+    max-w-screen-xl mx-auto py-8 px-6
+    grid grid-cols-1 gap-4 gap-y-6;
+
+  @screen md {
+    @apply grid-cols-2;
+  }
+
+  @screen lg {
+    @apply grid-cols-3;
+  }
 }

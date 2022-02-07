@@ -4,7 +4,7 @@
 
   & > div {
     @apply
-      max-w-screen-xl mx-auto h-16
+      max-w-screen-xl mx-auto h-16 px-6
       flex justify-between items-center;
 
       & > div:first-child {
