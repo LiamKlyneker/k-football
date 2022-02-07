@@ -6,6 +6,7 @@ import { baseUrl, requestOptions } from '../src/api-conf';
 
 export default function Home() {
   const [isFetching, setIsFetching] = useState(false);
+  const [itemsSource, setItemsSource] = useState([]);
   const [items, setItems] = useState([]);
 
   const fetchItems = async () => {
@@ -14,6 +15,12 @@ export default function Home() {
     const responseToJson = await response.json();
     setIsFetching(false);
     setItems(responseToJson.response);
+    setItemsSource(responseToJson.response);
+  };
+
+  const handleOnSearch = value => {
+    const filteredItems = [...itemsSource].filter(item => item.team.name.toLowerCase().includes(value.toLowerCase()));
+    setItems(filteredItems);
   };
 
   useEffect(() => {
@@ -28,11 +35,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <Header />
+      <Header />
 
-        <Hero />
-        <FilterSection />
+      <main>
+        <Hero title="Premier League" />
+        <FilterSection onSearch={handleOnSearch} />
 
         {isFetching && <Loader />}
         <ItemsList>

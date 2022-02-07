@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
   const theme = typeof window !== "undefined" && localStorage.getItem('theme') || 'light';
   return (
     <>
-      <Script id="show-banner" strategy="lazyOnload">
+      <Script id="show-banner" strategy="afterInteractive">
         {`if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
           document.documentElement.classList.add('dark')
         } else {

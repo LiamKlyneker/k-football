@@ -1,0 +1,4 @@
+.itemsListWrapper > div {
+  @apply
+    max-w-screen-xl mx-auto py-8;
+}

@@ -7,4 +7,4 @@ export const requestOptions = {
   redirect: 'follow'
 };
 
-export const baseUrl = 'https://v3.football.api-sports.io/teams?league=39&season=2021';
+export const baseUrl = 'https://v3.football.api-sports.io';

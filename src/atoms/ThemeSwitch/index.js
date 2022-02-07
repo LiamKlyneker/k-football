@@ -13,7 +13,7 @@ export default function ThemeSwitch({ name, onChange, checked }) {
         <span />
       </div>
       {checked && <i className="material-icons-outlined">nightlight</i>}
-      {!checked && <i className="material-icons-outlined text-white">wb_sunny</i>}
+      {!checked && <i className="material-icons-outlined text-gray-200">wb_sunny</i>}
     </label>
   );
 }
