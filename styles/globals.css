@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 html,
 body {
+  @apply dark:bg-gray-800;
   padding: 0;
   margin: 0;
   font-family: Manrope, sans-serif;
+  transition: all 0.3s ease-in-out 0.05s;
 }
 
 a {

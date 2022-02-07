@@ -2,3 +2,9 @@
   @apply
     h-16 bg-transparent outline-none px-6 font-normal;
 }
+
+:global(.dark) {
+  .selectWrapper {
+    @apply text-white;
+  }
+}

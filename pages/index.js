@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
-import { Hero, FilterSection, ItemsList, Item } from '#components';
+import { Loader } from '#atoms';
+import { Hero, FilterSection, ItemsList, Item, Header } from '#components';
 import { baseUrl, requestOptions } from '../src/api-conf';
 
 export default function Home() {
@@ -28,9 +29,12 @@ export default function Home() {
       </Head>
 
       <main>
+        <Header />
+
         <Hero />
         <FilterSection />
 
+        {isFetching && <Loader />}
         <ItemsList>
           {items.map(item => <Item key={item.team.id} data={item} />)}
         </ItemsList>

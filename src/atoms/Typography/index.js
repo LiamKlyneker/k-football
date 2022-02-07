@@ -19,6 +19,6 @@ export default function Typography({ variant = 'p', color, children }) {
 
 Typography.propTypes = {
   children: node,
-  variant: oneOf(['p', 'p-small', 'h1', 'h4', 'h5', 'small', 'caption']),
+  variant: oneOf(['p', 'h1', 'h4', 'subtitle', 'tag']),
   color: oneOf(['white'])
 };

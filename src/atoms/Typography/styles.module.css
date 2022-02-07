@@ -40,3 +40,13 @@
 .white {
   @apply text-white;
 }
+
+:global(.dark) {
+  .h4 {
+    @apply text-white;
+  }
+
+  .tag {
+    @apply bg-gray-300 text-black;
+  }
+}

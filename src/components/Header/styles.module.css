@@ -1,0 +1,14 @@
+.headerWrapper > div {
+  @apply
+    max-w-screen-xl mx-auto h-20
+    flex justify-between items-center;
+  margin-bottom: -80px;
+}
+
+.logo {
+  @apply text-white text-4xl;
+}
+
+.avatarSide {
+  @apply flex items-center gap-10;
+}

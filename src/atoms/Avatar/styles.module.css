@@ -1,0 +1,13 @@
+.avatarWrapper {
+  @apply flex items-center;
+}
+
+.avatarWrapper figure {
+  @apply
+    relative w-10 h-10 rounded-full overflow-hidden
+    border-2 border-gray-800 shadow-md mr-2;
+}
+
+.avatarWrapper p {
+  @apply font-semibold text-gray-800 text-sm;
+}

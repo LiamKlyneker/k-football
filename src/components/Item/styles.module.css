@@ -16,3 +16,9 @@
 .itemWrapper footer {
   @apply mt-6;
 }
+
+:global(.dark) {
+  .itemWrapper {
+    @apply bg-slate-800 border-gray-700;
+  }
+}

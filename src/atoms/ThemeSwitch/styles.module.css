@@ -1,0 +1,29 @@
+.themeSwitchWrapper {
+  @apply flex items-center gap-2 cursor-pointer;
+}
+
+.themeSwitchWrapper > div {
+  @apply border rounded-full w-12 h-7;
+  padding-left: 1px;
+  padding-right: 1px;
+
+  input {
+    @apply hidden;
+  }
+
+  span {
+    @apply
+      relative w-6 h-6
+      rounded-full bg-white block;
+    top: 1px;
+  }
+
+  input:checked + span {
+    @apply bg-gray-800;
+    left: 19px;
+  }
+}
+
+.themeSwitchWrapper > p {
+  @apply text-sm;
+}

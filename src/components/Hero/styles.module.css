@@ -1,10 +1,18 @@
 .hero {
   background: linear-gradient(270deg,#05f0ff 30%,#963cff) #963cff;
+  transition: background 1.5s ease-in;
   
   & > div {
     @apply
       max-w-screen-xl mx-auto
       flex items-center;
-    height: 400px;
+    height: 480px;
+    padding-top: 80px;
+  }
+}
+
+:global(.dark) {
+  .hero {
+    background: linear-gradient(270deg,#32A7AF 30%,#4E2282) #4E2282;
   }
 }

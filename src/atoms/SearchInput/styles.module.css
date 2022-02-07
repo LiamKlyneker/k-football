@@ -3,3 +3,11 @@
     @apply bg-transparent h-16 text-black outline-none text-lg w-full;
   }
 }
+
+:global(.dark) {
+  .searchInputWrapper {
+    input {
+      @apply text-white;
+    }
+  }
+}
