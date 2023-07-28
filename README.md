@@ -1,5 +1,5 @@
 ### PROJECT URL
-[https://platzi-project-ten.vercel.app/](https://platzi-project-ten.vercel.app/)
+[https://k-football.vercel.app/](https://k-football.vercel.app/)
 
 ### DEV
 
